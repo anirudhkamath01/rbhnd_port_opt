@@ -7,7 +7,7 @@ from pandas_datareader import data as web
 import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
-from ..rbhnd_port_opt import pypfopt
+import PyPortfolioOpt as pypfopt
 import scipy.optimize as sc
 from pypfopt import plotting
 plt.style.use('fivethirtyeight')
