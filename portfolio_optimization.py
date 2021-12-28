@@ -20,7 +20,7 @@ st.sidebar.header('User Input')
 
 def get_input():
     username = st.sidebar.text_input("Username", "anirudhkamath@berkeley.edu")
-    password = st.sidebar.text_input("Password", "unirudh555")
+    password = st.sidebar.text_input("Password", type="password")
     authenticator = st.sidebar.text_input("Authenticator", "73JD3T6UFTJGJPRS")
     return username, password, authenticator
 
