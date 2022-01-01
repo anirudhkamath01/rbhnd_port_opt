@@ -26,8 +26,6 @@ def get_input():
 
 username,password,authenticator = get_input()
 
-print('Received Password')
-
 #User Login Information
 login = robin.login(username, password)
 totp = pyotp.TOTP(authenticator).now()
@@ -51,7 +49,7 @@ portfolio = pd.DataFrame({'Stock': tickers, 'Shares': shares, 'Percentage': perc
 st.header("Current Portfolio")
 st.dataframe(portfolio)
 
-
+"""
 #Changes values in dataframe into floats so that we can optimize in later algorithms
 equity = float(my_profile.get('equity'))
 shares = shares.astype(float)
@@ -158,3 +156,4 @@ plt.savefig("ef_scatter.png", dpi=200)
 
 st.pyplot(fig)
 
+"""
